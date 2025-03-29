@@ -1,0 +1,101 @@
+/* Стиль для всего тела страницы */
+body {
+    margin: 0;
+    height: 100vh;  /* Высота страницы */
+    display: flex;
+    flex-direction: column;  /* Элементы располагаются по вертикали */
+    justify-content: center;  /* Центрируем по горизонтали */
+    align-items: center;  /* Центрируем по вертикали */
+    background-image: url('https://cdn.discordapp.com/attachments/433698163195641856/1334528523360272387/2025-01-24_19.56.07.png?ex=67e8aa4a&is=67e758ca&hm=3d4509c3bb6d86e010d002d64f33c89148ce694e387316db621358910ef2f3dc&');  /* Путь к изображению */
+    background-size: cover;  /* Фон будет растянут по размеру экрана */
+    background-position: center;  /* Фон будет центрирован */
+    background-repeat: no-repeat;  /* Фон не будет повторяться */
+}
+
+header {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+}
+
+.departments {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.department {
+    text-align: center;
+    background-color: rgb(149, 128, 128);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.department:hover {
+    transform: scale(1.05);
+}
+
+.department img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.department p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #000000;
+}
+
+.button-container {
+    position: absolute;  /* Абсолютное позиционирование */
+    top: 20px;  /* Отступ сверху */
+    right: 20px;  /* Правый отступ для первой кнопки */
+    display: flex;
+    gap: 5px;  /* Уменьшили расстояние между кнопками */
+}
+
+/* Стили для кнопок */
+.button {
+    padding: 12px 25px;  /* Немного уменьшили размер кнопок */
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #000000;
+    border-radius: 8px;
+    text-decoration: none;  /* Убираем подчеркивание у ссылок */
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Эффект при наведении на кнопки */
+.button:hover {
+    background-color: #0056b3;  /* Темный оттенок синего при наведении */
+    transform: translateY(-5px);  /* Легкое поднятие кнопки */
+}
+
+/* Эффект при нажатии на кнопки */
+.button:active {
+    transform: translateY(0);  /* Сброс эффекта при нажатии */
+}
+
+/* Позиционирование кнопок с левого края */
+.button-container a:nth-child(1) {
+    margin-left: 0;
+}
+
+.button-container a:nth-child(2) {
+    margin-left: 10px;  /* Уменьшили отступ */
+}
+
+.button-container a:nth-child(3) {
+    margin-left: 10px;  /* Уменьшили отступ */
+}
+
+.button-container a:nth-child(4) {
+    margin-left: 10px;  /* Уменьшили отступ */
+}
+

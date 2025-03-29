@@ -1,0 +1,169 @@
+/* Стиль для всего тела страницы */
+body {
+    margin: 0;
+    height: 100vh;  /* Высота страницы */
+    display: flex;
+    flex-direction: column;  /* Элементы располагаются по вертикали */
+    justify-content: center;  /* Центрируем по горизонтали */
+    align-items: center;  /* Центрируем по вертикали */
+    background-image: url('https://cdn.discordapp.com/attachments/433698163195641856/1334528523360272387/2025-01-24_19.56.07.png?ex=67e8aa4a&is=67e758ca&hm=3d4509c3bb6d86e010d002d64f33c89148ce694e387316db621358910ef2f3dc&');  /* Путь к изображению */
+    background-size: cover;  /* Фон будет растянут по размеру экрана */
+    background-position: center;  /* Фон будет центрирован */
+    background-repeat: no-repeat;  /* Фон не будет повторяться */
+}
+
+/* Стили для кнопок */
+.button-container {
+    position: absolute;  /* Абсолютное позиционирование */
+    top: 20px;  /* Отступ сверху */
+    right: 20px;  /* Правый отступ для первой кнопки */
+    display: flex;
+    gap: 5px;  /* Уменьшили расстояние между кнопками */
+}
+
+/* Стили для кнопок */
+.button {
+    padding: 12px 25px;  /* Немного уменьшили размер кнопок */
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #000000;
+    border-radius: 8px;
+    text-decoration: none;  /* Убираем подчеркивание у ссылок */
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Эффект при наведении на кнопки */
+.button:hover {
+    background-color: #0056b3;  /* Темный оттенок синего при наведении */
+    transform: translateY(-5px);  /* Легкое поднятие кнопки */
+}
+
+/* Эффект при нажатии на кнопки */
+.button:active {
+    transform: translateY(0);  /* Сброс эффекта при нажатии */
+}
+
+/* Позиционирование кнопок с левого края */
+.button-container a:nth-child(1) {
+    margin-left: 0;
+}
+
+.button-container a:nth-child(2) {
+    margin-left: 10px;  /* Уменьшили отступ */
+}
+
+.button-container a:nth-child(3) {
+    margin-left: 10px;  /* Уменьшили отступ */
+}
+
+.button-container a:nth-child(4) {
+    margin-left: 10px;  /* Уменьшили отступ */
+}
+
+/* Стили для информации об отделе */
+.department-info {
+    padding: 20px;
+    background-color: #d957db;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.department-details h2 {
+    margin-top: 0;
+}
+
+.department-details p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Стили для участников отдела */
+.department-members {
+    padding: 20px;
+    background-color: #d957db;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.department-members h2 {
+    text-align: center;
+}
+
+.members-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.member-card {
+    width: 150px;
+    text-align: center;
+    background-color: #bc42be;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+}
+
+.member-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.member-card p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.member-card a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.member-card a:hover {
+    text-decoration: underline;
+}
+
+/* Фото заведующего */
+.chief-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chief-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chief-info {
+    margin-left: 20px;
+}
+
+.chief-info p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.chief-link {
+    font-size: 1rem;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.chief-link:hover {
+    text-decoration: underline;
+}
